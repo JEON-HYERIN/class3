@@ -7,3 +7,50 @@
   height: 20px;
   background-color: aqua;
 }
+
+#tab1 {
+  width: 600px;
+  margin: 100px auto;
+  // border: 1px solid #777;
+
+  ul {
+    width: 100%;
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+      li {
+        width: 200px;
+        height: 40px;
+        float: left;
+        font: bold 18px/40px 'arial';
+        text-align: center;
+        background-color: #555;
+        color: #bbb;
+        cursor: pointer;
+      }
+
+        &.on {
+          background: #fff;
+          color: #333;
+        }
+
+    section {
+      width: 100%;
+      height: 200px;
+      position: relative;
+    }
+      article {
+        width: 100%;
+        height: 100%;
+        font: bold 20px/200px 'arial';
+        color: #333;
+        text-align: center;
+      }
+        &.on {
+          display: block;
+        }
+  }
+}
